@@ -1,0 +1,466 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --red: #bb0909;
+    --black: #000000;
+    --white: #FFFFFF; 
+    --mostaza: #eebf14;
+    --blue: #111180;
+    --green: #5BE71E;
+}
+
+@media screen and (min-width: 1400px){
+    body{
+        background: var(--black);
+        width: 100%;
+        height: 100vh;
+        padding-left: 10%;
+        padding-right: 10%;
+    
+    }
+    header{
+        width: 100%;
+        height: 380px;
+       
+    }
+    .logo{
+        width: 100%;
+        height: 380px;
+    }
+    .titulo{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    h1{
+        color: var(--white);
+        font-size: 80px;
+    }
+    .menu-container{
+        width: 100%;
+        display: grid;
+        grid-template-columns:repeat(3, 1fr)
+    }
+    .card{
+        width: 100%;
+        height: 450px;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+    
+        
+    
+    }
+    .combo{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    h2{
+        text-align: center;
+        color: var(--black);
+        border-radius: 45px;
+        font-size: 25px;
+        font-weight: bolder;
+        margin-top: 1rem;
+        margin-bottom: 0.5rem;
+        background: var(--white);
+        width: 80%;
+        text-transform: uppercase;
+        
+    }
+    .ingredientes-container{
+        display: flex;
+        width: 100%;
+        padding: 2rem;
+    }
+    .ingredientes{
+        width: 50%;
+        margin-top: 2.5rem;
+    }
+    ul li{
+        font-size: 22.5px;
+        margin-left: 3rem;
+        color: var(--white);
+    }
+    .contorno{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    p{
+        font-size: 12px;
+        text-align: center;
+        color: var(--white);
+    }
+    .img-container{
+        width: 330px;
+        margin-top: 1.8rem;
+    
+    
+    }
+    .img{
+        width: 100%;
+        height: 230px;
+        border-radius: 45px;
+        border: 2px var(--white) solid;
+        
+    }
+    .precio-container{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;       
+        width: 100%;
+        padding-bottom: 1rem;
+    }
+    h3{
+        text-align: center;
+        color: var(--white);
+        border: 1px var(--white) solid;
+        border-radius: 45px;
+        padding: 0.2rem 1rem;
+        font-size: 25px;
+    }
+    footer{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .footer-p{
+        font-size: 16px;
+        margin-top: 3rem;
+    }
+    
+}
+
+@media screen and (max-width: 750px){
+    body{
+        max-width: 750px;
+        min-width: 551px;
+        min-height: 100vh;
+        background: var(--black);
+        
+    }
+    header{
+        width: 100%;
+        height: 250px;
+    }
+    .logo{
+        width: 100%;
+        height: 100%;
+    }
+    h1{
+        text-align: center;
+        color: var(--white);
+    }
+    .card{
+        width: 100%;
+        height: 400px;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+  
+        
+
+    }
+    .combo{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    h2{
+        text-align: center;
+        color: var(--black);
+        border-radius: 45px;
+        font-size: 25px;
+        font-weight: bolder;
+        margin-top: 1rem;
+        margin-bottom: 0.5rem;
+        background: var(--white);
+        width: 80%;
+        text-transform: uppercase;
+        
+    }
+    .ingredientes-container{
+        display: flex;
+        width: 100%;
+        padding: 2rem;
+    }
+    .ingredientes{
+        width: 50%;
+        margin-top: 2.5rem;
+    }
+    ul li{
+        font-size: 18px;
+        margin-left: 3rem;
+        color: var(--white);
+    }
+    .contorno{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    p{
+        font-size: 12px;
+        text-align: center;
+        color: var(--white);
+    }
+    .img-container{
+        width: 330px;
+        margin-top: 1.8rem;
+
+    
+    }
+    .img{
+        width: 100%;
+        height: 230px;
+        border-radius: 45px;
+        border: 2px var(--white) solid;
+        
+    }
+    .precio-container{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;       
+        width: 100%;
+        padding-bottom: 1rem;
+    }
+    h3{
+        text-align: center;
+        color: var(--white);
+        border: 1px var(--white) solid;
+        border-radius: 45px;
+        padding: 0.2rem 1rem;
+    }
+    footer{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 3rem;
+    }
+    .footer-p{
+        font-size: 12px;
+    }
+
+}
+
+
+@media screen and (max-width: 550px){
+    body{
+        max-width: 550px;
+        min-width: 401px;
+        min-height: 100vh;
+        
+    }
+    header{
+        width: 100%;
+        height: 250px;
+    }
+    .logo{
+        width: 100%;
+        height: 100%;
+    }
+    h1{
+        text-align: center;
+        color: var(--white);
+    }
+    .card{
+        width: 100%;
+        height: 280px;
+        margin-top: 1rem;
+        margin-bottom: 2rem;
+  
+        
+
+    }
+    .combo{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    h2{
+        text-align: center;
+        color: var(--black);
+        border-radius: 45px;
+        font-size: 16px;
+        font-weight: bolder;
+        margin-top: 1rem;
+        margin-bottom: 0.5rem;
+        background: var(--white);
+        width: 80%;
+        text-transform: uppercase;
+        
+    }
+    .ingredientes-container{
+        display: flex;
+        width: 100%;
+        padding: 0.20rem;
+    }
+    .ingredientes{
+        width: 50%;
+        margin-top: 2.5rem;
+    }
+    ul li{
+        font-size: 16px;
+        margin-left: 3rem;
+        color: var(--white);
+    }
+    .contorno{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    p{
+        font-size: 12px;
+        text-align: center;
+        color: var(--white);
+    }
+    .img-container{
+        width: 200px;
+        margin-top: 1.8rem;
+
+    
+    }
+    .img{
+        width: 100%;
+        height: 180px;
+        border-radius: 45px;
+        border: 2px var(--white) solid;
+        
+    }
+    .precio-container{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;       
+        width: 100%;
+        padding-bottom: 1rem;
+    }
+    h3{
+        text-align: center;
+        color: var(--white);
+        border: 1px var(--white) solid;
+        border-radius: 45px;
+        padding: 0.2rem 1rem;
+    }
+
+}
+
+@media screen and (max-width: 400px){
+    body{
+        max-width: 400px;
+        min-width: 350px;
+        min-height: 100vh;
+        
+    }
+    header{
+        width: 100%;
+        height: 250px;
+    }
+    .logo{
+        width: 100%;
+        height: 100%;
+    }
+    h1{
+        text-align: center;
+        color: var(--white);
+    }
+    .card{
+        width: 100%;
+        height: 240px;
+        margin-top: 1rem;
+        margin-bottom: 3rem;
+        
+
+    }
+    .combo{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    h2{
+        text-align: center;
+        color: var(--black);
+        border-radius: 45px;
+        font-size: 14px;
+        font-weight: bolder;
+        margin-top: 0.5rem;
+        margin-bottom: 0.5rem;
+        background: var(--white);
+        width: 80%;
+        
+    }
+    .ingredientes-container{
+        display: flex;
+        width: 100%;
+        padding: 0.20rem;
+    }
+    .ingredientes{
+        width: 50%;
+        margin-top: 2.5rem;
+    }
+    ul li{
+        font-size: 12px;
+        margin-left: 1.2rem;
+        color: var(--white);
+    }
+    .contorno{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    p{
+        font-size: 12px;
+        text-align: center;
+        color: var(--white);
+    }
+    .img-container{
+        width: 170px;
+
+
+    
+    }
+    .img{
+        width: 100%;
+        height: 180px;
+        border-radius: 45px;
+        border: 2px var(--white) solid;
+        
+    }
+    .precio-container{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;       
+        width: 100%;
+        padding-bottom: 1rem;
+    }
+    h3{
+        text-align: center;
+        color: var(--white);
+        border: 1px var(--white) solid;
+        border-radius: 45px;
+        padding: 0.2rem 1rem;
+    }
+    footer{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .footer-p{
+        font-size: 10px;
+        margin-top: 1.5rem;
+    }
+
+}
+
+
+
+ 
+
+
